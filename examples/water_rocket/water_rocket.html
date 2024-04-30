@@ -951,8 +951,8 @@ The design of a water rocket is somewhat constrained by the soda bottle used as 
 This means that the volume available for water and air is fixed, the initial launch pressure is limited by the bottle’s strength (since the pressure is directly related to the energy available for the rocket, it is easy to see that it should be as high as possible) and the nozzle throat area is also fixed.
 Given these manufacturing constraints, the design variables we are left with are the empty mass (it can be easily changed through adding ballast), the water volume at the launch, and the launch angle.
 With this considerations in mind, a natural formulation for the water rocket problem is</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8a8f0ffb-0054-4736-bf21-26742320c113">
-<span class="eqno">(84)<a class="headerlink" href="#equation-8a8f0ffb-0054-4736-bf21-26742320c113" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e2bdd1c7-1610-43ef-9895-1395261d70fe">
+<span class="eqno">(84)<a class="headerlink" href="#equation-e2bdd1c7-1610-43ef-9895-1395261d70fe" title="Permalink to this equation">#</a></span>\[\begin{align}
     \text{maximize}   &amp;\quad \text{range or height} \\
     \text{w.r.t.}     &amp;\quad \text{empty mass, initial water volume, launch angle, trajectory} \\
     \text{subject to} &amp;\quad \text{flight dynamics} \\
@@ -1495,8 +1495,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">_MassAdder</span></code> component calculates the rocket’s instantaneous mass by
 summing the water mass with the rockets empty mass, i.e.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-32fe4e70-4d89-4291-89ca-94b67966f570">
-<span class="eqno">(85)<a class="headerlink" href="#equation-32fe4e70-4d89-4291-89ca-94b67966f570" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6523a96e-6ff7-4a3c-bf2a-05c17ec38608">
+<span class="eqno">(85)<a class="headerlink" href="#equation-6523a96e-6ff7-4a3c-bf2a-05c17ec38608" title="Permalink to this equation">#</a></span>\[\begin{align}
     m = m_\text{empty}+\rho_w V_w
 \end{align}\]</div>
 <div class="cell tag_remove-input docutils container">
@@ -2513,7 +2513,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 Model viewer data has already been recorded for Driver.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 1.6525573729999223 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 1.6742973620000612 seconds.
 Total jacobian shape: (1151, 1153) 
 </pre></div>
 </div>
@@ -2522,10 +2522,10 @@ FWD solves: 20   REV solves: 0
 Total colors vs. total size: 20 vs 1153  (98.27% improvement)
 
 Sparsity computed using tolerance: 1e-12
-Time to compute sparsity:   1.6526 sec
-Time to compute coloring:   2.0261 sec
-Memory to compute coloring: -19.8750 MB
-Coloring created on: 2024-03-29 20:27:52
+Time to compute sparsity:   1.6743 sec
+Time to compute coloring:   1.9345 sec
+Memory to compute coloring:  -9.7539 MB
+Coloring created on: 2024-04-30 18:31:11
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>List of user-set options:
@@ -2570,7 +2570,7 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 62
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 12.759
+Total seconds in IPOPT                               = 12.863
 
 EXIT: Optimal Solution Found.
 </pre></div>
@@ -2600,7 +2600,7 @@ Maximum velocity: 46.1530 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/7f78eb0c4cec7aa7e5ddb452e7e7ffb9dc0a6c96eb420d27f4390ec8af7df23b.png" src="../../_images/7f78eb0c4cec7aa7e5ddb452e7e7ffb9dc0a6c96eb420d27f4390ec8af7df23b.png" />
+<img alt="../../_images/421412e762227c64cf8482a75ca0c00040829a1ca6eaaa49386e956bf7644cc5.png" src="../../_images/421412e762227c64cf8482a75ca0c00040829a1ca6eaaa49386e956bf7644cc5.png" />
 </div>
 </div>
 </section>
@@ -2615,7 +2615,7 @@ Maximum velocity: 46.1530 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/1538e725213b00545c2358cd190aecae3c902bfd0dce0b5ec8e6cb5b50161f7e.png" src="../../_images/1538e725213b00545c2358cd190aecae3c902bfd0dce0b5ec8e6cb5b50161f7e.png" />
+<img alt="../../_images/62f119f11bb653dd1de1722a3a0fdd6f6d3a0d5b167bec2ca7229e9b101d99f5.png" src="../../_images/62f119f11bb653dd1de1722a3a0fdd6f6d3a0d5b167bec2ca7229e9b101d99f5.png" />
 </div>
 </div>
 </section>
@@ -2628,7 +2628,7 @@ Maximum velocity: 46.1530 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/43a7f0a9c125b65e81e4fa507fc4f03a45bce8fd6b2b48d7f64bb3032364aa79.png" src="../../_images/43a7f0a9c125b65e81e4fa507fc4f03a45bce8fd6b2b48d7f64bb3032364aa79.png" />
+<img alt="../../_images/015da89d0d9d13bf673414022aa433859edae6163f83ca2c847bbf9d4211c810.png" src="../../_images/015da89d0d9d13bf673414022aa433859edae6163f83ca2c847bbf9d4211c810.png" />
 </div>
 </div>
 </section>
@@ -2684,7 +2684,7 @@ Maximum velocity: 46.1530 m/s
 Model viewer data has already been recorded for Driver.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem6&#39; was computed 3 times, taking 1.6461755169999606 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem6&#39; was computed 3 times, taking 1.6436991969999326 seconds.
 Total jacobian shape: (1151, 1153) 
 </pre></div>
 </div>
@@ -2693,10 +2693,10 @@ FWD solves: 20   REV solves: 0
 Total colors vs. total size: 20 vs 1153  (98.27% improvement)
 
 Sparsity computed using tolerance: 1e-12
-Time to compute sparsity:   1.6462 sec
-Time to compute coloring:   1.9536 sec
-Memory to compute coloring:   0.1250 MB
-Coloring created on: 2024-03-29 20:28:14
+Time to compute sparsity:   1.6437 sec
+Time to compute coloring:   1.9125 sec
+Memory to compute coloring:   0.0000 MB
+Coloring created on: 2024-04-30 18:31:33
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>List of user-set options:
@@ -2741,7 +2741,7 @@ Number of inequality constraint evaluations          = 0
 Number of equality constraint Jacobian evaluations   = 49
 Number of inequality constraint Jacobian evaluations = 0
 Number of Lagrangian Hessian evaluations             = 0
-Total seconds in IPOPT                               = 11.539
+Total seconds in IPOPT                               = 11.731
 
 EXIT: Optimal Solution Found.
 
@@ -2752,11 +2752,11 @@ Optimization Problem -- Optimization using pyOpt_sparse
 
     Solution: 
 --------------------------------------------------------------------------------
-    Total Time:                   11.5395
-       User Objective Time :       0.1691
-       User Sensitivity Time :     9.8909
-       Interface Time :            0.9429
-       Opt Solver Time:            0.5367
+    Total Time:                   11.7325
+       User Objective Time :       0.1680
+       User Sensitivity Time :    10.0697
+       Interface Time :            0.9617
+       Opt Solver Time:            0.5331
     Calls to Objective Function :      56
     Calls to Sens Function :           49
 
@@ -5109,7 +5109,7 @@ Maximum velocity: 41.3116 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/cd6adb206e17e27f48a8b52c0ea88fdbea43bac84752a52a9d94948d8e033289.png" src="../../_images/cd6adb206e17e27f48a8b52c0ea88fdbea43bac84752a52a9d94948d8e033289.png" />
+<img alt="../../_images/d1dce5f4ceb94026dabde186ee39ce9a632b3d28fb4f4e86b0a854c983e5ee31.png" src="../../_images/d1dce5f4ceb94026dabde186ee39ce9a632b3d28fb4f4e86b0a854c983e5ee31.png" />
 </div>
 </div>
 </section>
@@ -5122,7 +5122,7 @@ Maximum velocity: 41.3116 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/be89c0b5c6fae0576d8178eadc4b15287cd3a72587437ca9bfc59e755b3b7ea7.png" src="../../_images/be89c0b5c6fae0576d8178eadc4b15287cd3a72587437ca9bfc59e755b3b7ea7.png" />
+<img alt="../../_images/858ba6cb97f013087564d512445c079f9f1796e23339077bcce75476cd183d77.png" src="../../_images/858ba6cb97f013087564d512445c079f9f1796e23339077bcce75476cd183d77.png" />
 </div>
 </div>
 </section>
@@ -5135,7 +5135,7 @@ Maximum velocity: 41.3116 m/s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/5244b3ed9d48a507dafcbcc2ac5008ded1f33ad57394bf5c2d6cbed702472465.png" src="../../_images/5244b3ed9d48a507dafcbcc2ac5008ded1f33ad57394bf5c2d6cbed702472465.png" />
+<img alt="../../_images/d49a920d6b2b12f374a9857aadfedde909e7d6dd5eb7d9f826b9d7d18fb321a7.png" src="../../_images/d49a920d6b2b12f374a9857aadfedde909e7d6dd5eb7d9f826b9d7d18fb321a7.png" />
 </div>
 </div>
 </section>

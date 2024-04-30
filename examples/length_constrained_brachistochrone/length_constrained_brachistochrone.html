@@ -782,8 +782,8 @@ Now, we seek to find the minimum time brachistochrone trajectory subject to a up
 <p>The most efficient way to approach this problem would be to treat the arc-length <span class="math notranslate nohighlight">\(S\)</span> as an integrated state variable.
 In this case, as is often the case in real-world MDO analyses, the implementation of our arc-length function is not integrated into our pseudospectral approach.
 Rather than rewrite an analysis tool to accommodate the pseudospectral approach, the arc-length analysis simply takes the result of the trajectory in its entirety and computes the arc-length constraint via the trapezoidal rule:\</p>
-<div class="amsmath math notranslate nohighlight" id="equation-342253c6-68c9-4b2e-ad4e-1ecc9099e18f">
-<span class="eqno">(61)<a class="headerlink" href="#equation-342253c6-68c9-4b2e-ad4e-1ecc9099e18f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-150e5dbd-0659-4540-9361-d9bc1077d1b6">
+<span class="eqno">(61)<a class="headerlink" href="#equation-150e5dbd-0659-4540-9361-d9bc1077d1b6" title="Permalink to this equation">#</a></span>\[\begin{align}
     S &amp;= \frac{1}{2} \left( \sum_{i=1}^{N-1} \sqrt{1 + \frac{1}{\tan{\theta_{i-1}}}} + \sqrt{1 + \frac{1}{\tan{\theta_{i}}}} \right) \left(x_{i-1} - x_i \right)
 \end{align}\]</div>
 <p>The OpenMDAO component used to compute the arclength is defined as follows:</p>
@@ -1146,7 +1146,7 @@ INFO: checking out_of_order
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: checking auto_ivc_warnings
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.45225025399997776 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.45525710500010064 seconds.
 Total jacobian shape: (220, 296) 
 </pre></div>
 </div>
@@ -1155,10 +1155,10 @@ FWD solves: 1   REV solves: 11
 Total colors vs. total size: 12 vs 220  (94.55% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.4523 sec
-Time to compute coloring:   0.2091 sec
+Time to compute sparsity:   0.4553 sec
+Time to compute coloring:   0.2071 sec
 Memory to compute coloring:   0.5000 MB
-Coloring created on: 2024-03-29 20:24:23
+Coloring created on: 2024-04-30 18:27:39
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization terminated successfully    (Exit mode 0)
@@ -1178,12 +1178,10 @@ Optimization Complete
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Simulating trajectory traj
+Done simulating trajectory traj
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Done simulating trajectory traj
-</pre></div>
-</div>
-<img alt="../../_images/1b194d6bd5e296ad39821702222a37e06d2c3c5bf5ff190898e66500bfd0482b.png" src="../../_images/1b194d6bd5e296ad39821702222a37e06d2c3c5bf5ff190898e66500bfd0482b.png" />
+<img alt="../../_images/2b4188591e359141044c60f1523ec942cc4a8d15ed5e065ac90b461169558311.png" src="../../_images/2b4188591e359141044c60f1523ec942cc4a8d15ed5e065ac90b461169558311.png" />
 </div>
 </div>
 </section>
