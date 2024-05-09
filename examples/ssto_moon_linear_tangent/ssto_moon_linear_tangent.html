@@ -1091,6 +1091,9 @@ only significant change is that we have a new component,
         [final]   1.6270e+03 == vx [m/s]
         [final]   0.0000e+00 == vy [m/s]
 
+
+&#39;rhs_checking&#39; is disabled for &#39;DirectSolver in &lt;model&gt; &lt;class Group&gt;&#39; but that solver has redundant adjoint solves. If it is expensive to compute derivatives for this solver, turning on &#39;rhs_checking&#39; may improve performance.
+
 INFO: checking out_of_order
 </pre></div>
 </div>
@@ -1146,7 +1149,7 @@ INFO: checking out_of_order
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: checking auto_ivc_warnings
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.057866239999952995 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.05837743100005355 seconds.
 Total jacobian shape: (103, 103) 
 </pre></div>
 </div>
@@ -1155,10 +1158,10 @@ FWD solves: 18   REV solves: 0
 Total colors vs. total size: 18 vs 103  (82.52% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.0579 sec
-Time to compute coloring:   0.0798 sec
+Time to compute sparsity:   0.0584 sec
+Time to compute coloring:   0.0794 sec
 Memory to compute coloring:   0.3750 MB
-Coloring created on: 2024-05-01 22:45:27
+Coloring created on: 2024-05-09 22:50:03
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization Problem -- Optimization using pyOpt_sparse
@@ -1167,11 +1170,11 @@ Coloring created on: 2024-05-01 22:45:27
 
     Solution: 
 --------------------------------------------------------------------------------
-    Total Time:                    0.0652
-       User Objective Time :       0.0072
-       User Sensitivity Time :     0.0308
-       Interface Time :            0.0132
-       Opt Solver Time:            0.0141
+    Total Time:                    0.0662
+       User Objective Time :       0.0075
+       User Sensitivity Time :     0.0314
+       Interface Time :            0.0131
+       Opt Solver Time:            0.0142
     Calls to Objective Function :       6
     Calls to Sens Function :            5
 
