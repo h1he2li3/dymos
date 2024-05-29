@@ -838,24 +838,24 @@ the system at an event in the trajectory. Here, we have the first phase
 (ascent) terminate when the flight path angle reaches zero (apogee). The
 descent phase follows until the cannonball impacts the ground.</p>
 <p>The dynamics are given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a7e2eda0-0816-4935-ac53-f403441343b6">
-<span class="eqno">(70)<a class="headerlink" href="#equation-a7e2eda0-0816-4935-ac53-f403441343b6" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-16c2bff6-1d61-4631-b3a2-eec3a9e18614">
+<span class="eqno">(70)<a class="headerlink" href="#equation-16c2bff6-1d61-4631-b3a2-eec3a9e18614" title="Permalink to this equation">#</a></span>\[\begin{align}
   \frac{dv}{dt} &amp;= \frac{D}{m} - g \sin \gamma \\
   \frac{d\gamma}{dt} &amp;= - \frac{g \cos \gamma}{v} \\
   \frac{dh}{dt} &amp;= v \sin \gamma \\
   \frac{dr}{dt} &amp;= v \cos \gamma \\
 \end{align}\]</div>
 <p>The initial conditions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-bea611a8-5e2c-4f4a-b297-2fdd198daff9">
-<span class="eqno">(71)<a class="headerlink" href="#equation-bea611a8-5e2c-4f4a-b297-2fdd198daff9" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cbb8c44c-d10e-4960-827e-629d2f64fe11">
+<span class="eqno">(71)<a class="headerlink" href="#equation-cbb8c44c-d10e-4960-827e-629d2f64fe11" title="Permalink to this equation">#</a></span>\[\begin{align}
   r_0 &amp;= 0 \rm{\,m} \\
   h_0 &amp;= 100 \rm{\,m} \\
   v_0 &amp;= \rm{free} \\
   \gamma_0 &amp;= \rm{free}
 \end{align}\]</div>
 <p>and the final conditions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3f95e558-a1f9-4348-ac8d-3e0d4f38c145">
-<span class="eqno">(72)<a class="headerlink" href="#equation-3f95e558-a1f9-4348-ac8d-3e0d4f38c145" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7dcacbf2-711c-45e9-8d02-ef0d2e144a5f">
+<span class="eqno">(72)<a class="headerlink" href="#equation-7dcacbf2-711c-45e9-8d02-ef0d2e144a5f" title="Permalink to this equation">#</a></span>\[\begin{align}
   h_f &amp;= 0 \rm{\,m}
 \end{align}\]</div>
 </section>
@@ -868,8 +868,8 @@ energy and that our cannonball is made of solid iron. The volume (and
 mass) of the cannonball is proportional to its radius cubed, while the
 cross-sectional area is proportional to its radius squared. If we
 increase the size of the cannonball, the ballistic coefficient</p>
-<div class="amsmath math notranslate nohighlight" id="equation-193614ed-9133-4f8c-b438-abc28ad6dac3">
-<span class="eqno">(73)<a class="headerlink" href="#equation-193614ed-9133-4f8c-b438-abc28ad6dac3" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2a71c11b-d0ef-41c4-9f76-f1675d07248e">
+<span class="eqno">(73)<a class="headerlink" href="#equation-2a71c11b-d0ef-41c4-9f76-f1675d07248e" title="Permalink to this equation">#</a></span>\[\begin{align}
   BC &amp;= \frac{m}{C_D A}
 \end{align}\]</div>
 <p>will increase, meaning the cannonball overcome air resistance more
@@ -1168,9 +1168,9 @@ FWD solves: 6   REV solves: 0
 Total colors vs. total size: 6 vs 63  (90.48% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.0172 sec
-Time to compute coloring:   0.0071 sec
-Memory to compute coloring:   0.1250 MB
+Time to compute sparsity:   0.0170 sec
+Time to compute coloring:   0.0072 sec
+Memory to compute coloring:   0.3750 MB
 
 Coloring for &#39;traj.phases.descent.rhs_disc&#39; (class CannonballODE)
 
@@ -1195,7 +1195,7 @@ Time to compute coloring:   0.0021 sec
 Memory to compute coloring:   0.0000 MB
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.10710775900008684 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.10577802699992844 seconds.
 Total jacobian shape: (87, 88) 
 
 
@@ -1204,10 +1204,10 @@ FWD solves: 30   REV solves: 0
 Total colors vs. total size: 30 vs 88  (65.91% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.1071 sec
-Time to compute coloring:   0.0524 sec
-Memory to compute coloring:   0.6250 MB
-Coloring created on: 2024-05-22 13:42:19
+Time to compute sparsity:   0.1058 sec
+Time to compute coloring:   0.0539 sec
+Memory to compute coloring:   0.5000 MB
+Coloring created on: 2024-05-29 17:02:45
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization Problem -- Optimization using pyOpt_sparse
@@ -1216,11 +1216,11 @@ Coloring created on: 2024-05-22 13:42:19
 
     Solution: 
 --------------------------------------------------------------------------------
-    Total Time:                    1.7741
-       User Objective Time :       0.2047
-       User Sensitivity Time :     1.2071
-       Interface Time :            0.2015
-       Opt Solver Time:            0.1608
+    Total Time:                    1.7296
+       User Objective Time :       0.1930
+       User Sensitivity Time :     1.1813
+       Interface Time :            0.1973
+       Opt Solver Time:            0.1579
     Calls to Objective Function :     118
     Calls to Sens Function :           89
 
@@ -1418,9 +1418,7 @@ Coloring created on: 2024-05-22 13:42:19
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Simulating trajectory traj
 Model viewer data has already been recorded for Driver.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Done simulating trajectory traj
+Done simulating trajectory traj
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False

@@ -799,20 +799,20 @@ traveled by a block (that starts and ends at rest) sliding without
 friction along a horizontal surface, with acceleration as the control.</p>
 <p>We minimize the final time, <span class="math notranslate nohighlight">\(t_f\)</span>, by varying the dynamic control,
 <span class="math notranslate nohighlight">\(u\)</span>, subject to the dynamics:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec9113c1-2c45-449c-8958-a5fae3d4b973">
-<span class="eqno">(45)<a class="headerlink" href="#equation-ec9113c1-2c45-449c-8958-a5fae3d4b973" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-224dffc0-db38-4df1-91f3-6c04035404fb">
+<span class="eqno">(45)<a class="headerlink" href="#equation-224dffc0-db38-4df1-91f3-6c04035404fb" title="Permalink to this equation">#</a></span>\[\begin{align}
   \frac{dx}{dt} &amp;= v \\
   \frac{dv}{dt} &amp;= u
 \end{align}\]</div>
 <p>The initial conditions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-05d557b2-43fa-4ea6-9799-0504bc364daf">
-<span class="eqno">(46)<a class="headerlink" href="#equation-05d557b2-43fa-4ea6-9799-0504bc364daf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-99172a51-836a-4244-967b-3dff5947c16a">
+<span class="eqno">(46)<a class="headerlink" href="#equation-99172a51-836a-4244-967b-3dff5947c16a" title="Permalink to this equation">#</a></span>\[\begin{align}
   x_0 &amp;= 0 \\
   v_0 &amp;= 0
 \end{align}\]</div>
 <p>and the final conditions are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1bb401ab-8229-4f53-bcb3-5e0cd0a5a735">
-<span class="eqno">(47)<a class="headerlink" href="#equation-1bb401ab-8229-4f53-bcb3-5e0cd0a5a735" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a5b31547-6539-4732-8b6b-c81bf95e978b">
+<span class="eqno">(47)<a class="headerlink" href="#equation-a5b31547-6539-4732-8b6b-c81bf95e978b" title="Permalink to this equation">#</a></span>\[\begin{align}
   x_f &amp;= \rm{free} \\
   v_f &amp;= 0
 \end{align}\]</div>
@@ -1086,7 +1086,7 @@ INFO: checking out_of_order
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO: checking auto_ivc_warnings
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.060948752999934186 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.060987446000012824 seconds.
 Total jacobian shape: (181, 327) 
 </pre></div>
 </div>
@@ -1095,10 +1095,10 @@ FWD solves: 0   REV solves: 6
 Total colors vs. total size: 6 vs 181  (96.69% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.0609 sec
-Time to compute coloring:   0.0819 sec
-Memory to compute coloring:   0.3750 MB
-Coloring created on: 2024-05-22 13:40:30
+Time to compute sparsity:   0.0610 sec
+Time to compute coloring:   0.0821 sec
+Memory to compute coloring:   0.5000 MB
+Coloring created on: 2024-05-29 17:01:01
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization Problem -- Optimization using pyOpt_sparse
@@ -1107,11 +1107,11 @@ Coloring created on: 2024-05-22 13:40:30
 
     Solution: 
 --------------------------------------------------------------------------------
-    Total Time:                    1.9326
-       User Objective Time :       0.0211
-       User Sensitivity Time :     0.0613
-       Interface Time :            0.0728
-       Opt Solver Time:            1.7774
+    Total Time:                    1.9417
+       User Objective Time :       0.0198
+       User Sensitivity Time :     0.0608
+       Interface Time :            0.0739
+       Opt Solver Time:            1.7872
     Calls to Objective Function :      19
     Calls to Sens Function :           19
 
