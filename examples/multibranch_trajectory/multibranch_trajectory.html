@@ -1150,17 +1150,10 @@ state of charge.</p>
 
 <span class="n">prob</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
 
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase0.t_initial&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase0.t_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1.t_initial&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1.t_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1_bfail.t_initial&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1_bfail.t_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1_mfail.t_initial&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
-<span class="n">prob</span><span class="p">[</span><span class="s1">&#39;traj.phase1_mfail.t_duration&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">*</span><span class="mi">3600</span>
+<span class="n">phase0</span><span class="o">.</span><span class="n">set_time_val</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">3600</span><span class="p">)</span>
+<span class="n">phase1</span><span class="o">.</span><span class="n">set_time_val</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">)</span>
+<span class="n">phase1_bfail</span><span class="o">.</span><span class="n">set_time_val</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">)</span>
+<span class="n">phase1_mfail</span><span class="o">.</span><span class="n">set_time_val</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">3600.0</span><span class="p">)</span>
 
 <span class="n">prob</span><span class="o">.</span><span class="n">set_solver_print</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">dm</span><span class="o">.</span><span class="n">run_problem</span><span class="p">(</span><span class="n">prob</span><span class="p">)</span>
@@ -1221,7 +1214,7 @@ state of charge.</p>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model viewer data has already been recorded for Driver.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.05666932799999813 seconds.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full total jacobian for problem &#39;problem&#39; was computed 3 times, taking 0.058341198999983135 seconds.
 Total jacobian shape: (107, 122) 
 
 
@@ -1230,10 +1223,10 @@ FWD solves: 6   REV solves: 0
 Total colors vs. total size: 6 vs 122  (95.08% improvement)
 
 Sparsity computed using tolerance: 1e-25
-Time to compute sparsity:   0.0567 sec
-Time to compute coloring:   0.0408 sec
+Time to compute sparsity:   0.0583 sec
+Time to compute coloring:   0.0397 sec
 Memory to compute coloring:   0.2500 MB
-Coloring created on: 2024-06-04 15:31:16
+Coloring created on: 2024-06-06 15:18:00
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization terminated successfully    (Exit mode 0)
